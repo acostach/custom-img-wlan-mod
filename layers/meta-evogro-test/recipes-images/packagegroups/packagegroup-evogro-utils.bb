@@ -26,10 +26,9 @@ RDEPENDS_${PN} = " \
     networkmanager \
 "
 
-# kernel modules for balenaFin
-RDEPENDS_${PN} += " \
-    kernel-module-cdc-acm \
-    kernel-module-uvcvideo \
-    kernel-module-xt-tcpudp \
-    kernel-module-xt-redirect \
-"
+# We already have
+# CONFIG_USB_ACM=m
+# CONFIG_USB_VIDEO_CLASS=m
+# CONFIG_USB_VIDEO_CLASS_INPUT_EVDEV=y
+# CONFIG_NETFILTER_XTABLES=y
+# CONFIG_NETFILTER_XT_TARGET_REDIRECT=m

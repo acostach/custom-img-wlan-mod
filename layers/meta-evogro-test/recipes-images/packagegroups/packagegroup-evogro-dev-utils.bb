@@ -13,5 +13,4 @@ RDEPENDS_${PN} = " \
     opkg \
     less \
     tcpdump \
-    kernel-module-configs \
 "
